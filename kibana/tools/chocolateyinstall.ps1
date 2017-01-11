@@ -1,8 +1,8 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $PackageName = 'kibana'
-$url32       = 'https://camunda.org/release/camunda-modeler/1.6.0/camunda-modeler-1.6.0-win32-ia32.zip'
-$checksum32  = '1efb2e9e543e8da2938b14dfa5c41b417d62e7fee43f21d1d2bc1a8b706a48ae'
+$url32       = 'https://artifacts.elastic.co/downloads/kibana/kibana-5.1.1-windows-x86.zip'
+$checksum32  = '24e640c5b44688f08a5707a9197c3da93aae3be8c85b8d942b71b752bc4b662c'
 
 $packageArgs = @{
   packageName    = $packageName
