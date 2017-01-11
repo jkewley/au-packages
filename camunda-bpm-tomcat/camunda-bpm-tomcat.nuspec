@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>camunda-bpm-tomcat</id>
     <title>Camunda BPM Tomcat</title>
-    <version>1</version>
+    <version>7.6.0</version>
     <authors>https://github.com/camunda/camunda-bpm-platform/graphs/contributors</authors>
     <owners>hambone TervisIT</owners>
     <summary>The Camunda Engine is lightning fast, and clustering for horizontal scalability is straightforward as the engine is stateless: multiple instances can share the same database.</summary>
