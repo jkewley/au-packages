@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kibana</id>
+    <title>Kibana</title>
+    <version>{{PackageVersion}}</version>
+    <authors>https://github.com/elastic/kibana/graphs/contributors</authors>
+    <owners>hambone</owners>
+    <summary>Explore and Visualize Your Data</summary>
+    <description>Kibana is an open source data visualization platform that allows you to interact with your data through stunning, powerful graphics that can be combined into custom dashboards that help you share insights from your data far and wide.
+	
+	Kibana will be installed in %ChocolateyInstall%\lib\Kibana and add a service called "kibana-service". Kibana may be initialized by starting the service manually.  Automatic Package.
+    </description>
+    <projectUrl>https://www.elastic.co/products/kibana</projectUrl>
+    <packageSourceUrl>https://github.com/Tervis-Tumbler/chocolatey-packages/tree/master/AutomaticPackages/kibana</packageSourceUrl>
+    <projectSourceUrl>https://github.com/elastic/kibana</projectSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/kibana/current/index.html</docsUrl>
+    <tags>data kibana visualization elastic</tags>
+    <licenseUrl>https://github.com/elastic/kibana/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+	  <dependency id="jdk8" />
+	  <dependency id="nssm" />
+    </dependencies>
+  </metadata>
+</package>
