@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>logstash</id>
+    <version>2.3.4</version>
+    <title>Logstash</title>
+    <authors>https://github.com/elastic/logstash/graphs/contributors</authors>
+    <owners>kireevco hambone TervisIT</owners>
+    <licenseUrl>https://github.com/elasticsearch/logstash/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://www.elastic.co/products/logstash</projectUrl>
+    <iconUrl>https://static-www.elastic.co/assets/blte39224bc57d3e015/icon-logstash.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Logstash is a tool for managing events and logs. You can use it to cppollect logs, parse them, and store them for later use (like, for searching). 
+  
+  This package is updated automatically to use new url when a new version comes out.</description>
+    <summary>Logstash Agent package</summary>
+    <releaseNotes>https://www.elastic.co/guide/en/logstash/current/releasenotes.html</releaseNotes>
+    <copyright>https://www.elastic.co/products/logstash</copyright>
+    <tags>logstash logging elastic admin</tags>
+    <projectSourceUrl>https://github.com/elastic/logstash</projectSourceUrl>
+    <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages</packageSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/logstash/current/index.html</docsUrl>
+    <dependencies>
+      <dependency id="javaruntime" />
+    </dependencies>
+  </metadata>
+</package>
