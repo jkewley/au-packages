@@ -1,6 +1,6 @@
 <!-- EDIT ME-->
 
-[![](https://ci.appveyor.com/api/projects/status/github/ChrisMagnuson/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/ChrisMagnuson/au-packages)
+[![Build status](https://ci.appveyor.com/api/projects/status/ir5t1sla8ru06vn0?svg=true)](https://ci.appveyor.com/project/ChrisMagnuson/au-packages)
 [Update status](https://gist.github.com/ChrisMagnuson/958bf060c4b5b20935beba56eeebe1ae)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/TervisIT](https://chocolatey.org/profiles/tervisit)
