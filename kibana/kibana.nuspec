@@ -7,9 +7,13 @@
     <authors>https://github.com/elastic/kibana/graphs/contributors</authors>
     <owners>hambone</owners>
     <summary>Explore and Visualize Your Data</summary>
-    <description>Kibana is an open source data visualization platform that allows you to interact with your data through stunning, powerful graphics that can be combined into custom dashboards that help you share insights from your data far and wide.
+    <description>Kibana is an open source data visualization platform that allows you to interact with your data through stunning, powerful graphics that can be combined into custom dashboards that help you share insights from your data far and wide.  
 	
-	Kibana will be installed in %ChocolateyInstall%\lib\Kibana and add a service called "kibana-service". Kibana may be initialized by starting the service manually.  Automatic Package.
+	Kibana will be installed in %ChocolateyInstall%\lib\Kibana and add a service called "kibana-service".  
+	
+	The Kibana service is set to manually start by default. It can be set to automatically start by changing the service properties.  
+	
+	This is an automatic package.  
     </description>
     <projectUrl>https://www.elastic.co/products/kibana</projectUrl>
     <packageSourceUrl>https://github.com/Tervis-Tumbler/chocolatey-packages/tree/master/AutomaticPackages/kibana</packageSourceUrl>
