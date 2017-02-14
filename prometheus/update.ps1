@@ -20,7 +20,7 @@ function global:au_GetLatest {
     $regex  = "prometheus-1.5.2.windows-.+.tar.gz"
     $urls = $download_page.links | ? href -match $regex | select -expand href
 
-    $version = ($url -split "-" | select -First 1 -Skip 1) -split "\.windows" | select -First 1
+    $version = ($urls -split "-" | select -First 1 -Skip 1) -split "\.windows" | select -First 1
     $url32 = $urls -match "386"
     $url64 = $urls -match "amd64"
 
