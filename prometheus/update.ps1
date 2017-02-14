@@ -21,8 +21,8 @@ function global:au_GetLatest {
     $urls = $download_page.links | ? href -match $regex | select -expand href
 
     $version = ($urls -split "-" | select -First 1 -Skip 1) -split "\.windows" | select -First 1
-    $url32 = $urls -match "386"
-    $url64 = $urls -match "amd64"
+    $url32 = $urls | where {$_ -match "386"}
+    $url64 = $urls | where {$_ -match "amd64"}
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
