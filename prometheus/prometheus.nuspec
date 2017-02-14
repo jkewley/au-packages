@@ -23,6 +23,7 @@ Prometheus' main distinguishing features as compared to other monitoring systems
 - multiple modes of **graphing and dashboarding support**
 - support for hierarchical and horizontal **federation**  
     </description>
+    <iconUrl>https://pbs.twimg.com/profile_images/588945677599780865/mrhc1gSh.png</iconUrl>
     <projectUrl>https://prometheus.io/</projectUrl>
     <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/prometheus</packageSourceUrl>
     <projectSourceUrl>https://github.com/prometheus/prometheus</projectSourceUrl>
