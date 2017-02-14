@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'kafka'
-$url32       = 'http://mirrors.advancedhosters.com/apache/kafka/0.10.1.1/kafka_2.11-0.10.1.1.tgz'
+$url32       = 'http://download.nextag.com/apache/kafka/0.10.1.1/kafka_2.11-0.10.1.1.tgz'
 $checksum32  = '1540800779429d8f0a08be7b300e4cb6500056961440a01c8dbb281db76f0929'
 
 $packageArgs = @{
