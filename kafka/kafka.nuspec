@@ -7,7 +7,7 @@
     <owners>hambone TervisIT</owners>
     <authors>Kafka</authors>
     <summary>Kafka is a distributed streaming platform</summary>
-    <description>Kafka™ is a distributed streaming platform. What exactly does that mean?
+    <description>Kafka is a distributed streaming platform. What exactly does that mean?
 
 We think of a streaming platform as having three key capabilities:
 
