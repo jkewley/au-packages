@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'prometheus'
-$url32       = 'https://camunda.org/release/camunda-bpm/tomcat/7.6/camunda-bpm-tomcat-7.6.0.zip'
-$url64       = 'https://camunda.org/release/camunda-bpm/tomcat/7.6/camunda-bpm-tomcat-7.6.0.zip'
-$checksum32  = '4f08e0c14d29e3bd9dd6dbe1d4f0c369ad2065ad80973f61a774a816476f110b'
-$checksum64  = '4f08e0c14d29e3bd9dd6dbe1d4f0c369ad2065ad80973f61a774a816476f110b'
+$url32       = 'https://github.com/prometheus/prometheus/releases/download/v1.5.2/prometheus-1.5.2.windows-386.tar.gz'
+$url64       = 'https://github.com/prometheus/prometheus/releases/download/v1.5.2/prometheus-1.5.2.windows-amd64.tar.gz'
+$checksum32  = 'cbf4028b62eb0bb36459ec87cf8d793ec417a874124b8c67f8b75911043f3787'
+$checksum64  = '8518df8ad210a3d988c5de82b419375021f3fcc76ccb23bd1c130c870af81af2'
 
 $packageArgs = @{
   packageName    = $packageName
