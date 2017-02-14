@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'kafka'
-$url32       = 'https://github.com/prometheus/prometheus/releases/download/v1.5.2/prometheus-1.5.2.windows-386.tar.gz'
-$checksum32  = 'cbf4028b62eb0bb36459ec87cf8d793ec417a874124b8c67f8b75911043f3787'
+$url32       = 'http://mirrors.advancedhosters.com/apache/kafka/0.10.1.1/kafka_2.11-0.10.1.1.tgz'
+$checksum32  = '1540800779429d8f0a08be7b300e4cb6500056961440a01c8dbb281db76f0929'
 
 $packageArgs = @{
   packageName    = $packageName
