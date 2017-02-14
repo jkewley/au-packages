@@ -5,7 +5,7 @@
     <version>5.1.2</version>
     <title>Logstash</title>
     <owners>kireevco hambone TervisIT</owners>
-    <authors></authors>
+    <authors>Elastic</authors>
     <licenseUrl>https://github.com/elasticsearch/logstash/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.elastic.co/products/logstash</projectUrl>
     <iconUrl>https://static-www.elastic.co/assets/blte39224bc57d3e015/icon-logstash.svg</iconUrl>

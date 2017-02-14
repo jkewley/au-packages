@@ -5,7 +5,7 @@
     <title>Prometheus</title>
     <version>0</version>
     <owners>hambone TervisIT</owners>
-    <authors></authors>
+    <authors>Prometheus</authors>
     <summary>From metrics to insight</summary>
     <description>Prometheus, a [Cloud Native Computing Foundation](https://cncf.io/) project, is a systems and service monitoring system. It collects metrics
 from configured targets at given intervals, evaluates rule expressions,
