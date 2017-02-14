@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'kibana'
-$url32       = 'https://artifacts.elastic.co/downloads/kibana/kibana-5.1.2-windows-x86.zip'
-$checksum32  = '3c6a8d2eb5df58978704b5ac176fcf29401dae56881aa23b5e1a5c90605542cc'
+$url32       = 'https://artifacts.elastic.co/downloads/kibana/kibana-5.2.1-windows-x86.zip'
+$checksum32  = '8753db954a89a7a5c19a2c93886b523d1f8054bd31ce24c772bd873555a949d8'
 
 $packageArgs = @{
   packageName    = $packageName

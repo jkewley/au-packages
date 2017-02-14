@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kibana</id>
     <title>Kibana</title>
-    <version>5.1.2</version>
+    <version>5.2.1</version>
     <owners>hambone</owners>
     <authors>Elastic</authors>
     <summary>Explore and Visualize Your Data</summary>
