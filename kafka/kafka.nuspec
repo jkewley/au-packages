@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kafka</id>
+    <title>Kafka</title>
+    <version>0</version>
+    <owners>hambone TervisIT</owners>
+    <authors>Kafka</authors>
+    <summary>Kafka is a distributed streaming platform</summary>
+    <description>Kafka™ is a distributed streaming platform. What exactly does that mean?
+
+We think of a streaming platform as having three key capabilities:
+
+It lets you publish and subscribe to streams of records. In this respect it is similar to a message queue or enterprise messaging system.
+It lets you store streams of records in a fault-tolerant way.
+It lets you process streams of records as they occur.
+What is Kafka good for?
+
+It gets used for two broad classes of application:
+
+Building real-time streaming data pipelines that reliably get data between systems or applications
+Building real-time streaming applications that transform or react to the streams of data
+To understand how Kafka does these things, let's dive in and explore Kafka's capabilities from the bottom up.
+
+First a few concepts:
+
+Kafka is run as a cluster on one or more servers.
+The Kafka cluster stores streams of records in categories called topics.
+Each record consists of a key, a value, and a timestamp.
+
+This is an automatic package.
+    </description>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/f/f7/Apache_kafka.png</iconUrl>
+    <projectUrl>https://kafka.apache.org/</projectUrl>
+    <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/kafka</packageSourceUrl>
+    <projectSourceUrl>https://github.com/apache/kafka</projectSourceUrl>
+    <docsUrl>https://kafka.apache.org/documentation/</docsUrl>
+    <tags>data kafka streaming</tags>
+    <licenseUrl>https://github.com/apache/kafka/blob/trunk/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+	  <dependency id="nssm" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
