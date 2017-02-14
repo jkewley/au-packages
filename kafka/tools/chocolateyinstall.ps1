@@ -30,7 +30,7 @@ $ServiceName = 'kafka-service'
 Invoke-StopAndDeleteService -ServiceName $ServiceName
 
 Write-Host "Installing service"
-C:\ProgramData\chocolatey\lib\kafka\tools\kafka_2.11-0.10.1.1\bin\windows\kafka-server-start.bat
+
 Start-ChocolateyProcessAsAdmin "install $ServiceName $(Join-Path $env:chocolateyPackageFolder "tools\kafka_2.11-$PackageVersion\bin\windows\kafka-server-start.bat") $(Join-Path $env:chocolateyPackageFolder "tools\kafka_2.11-$PackageVersion\config\server.properties")" nssm
 Start-ChocolateyProcessAsAdmin "set $ServiceName Start SERVICE_DEMAND_START" nssm
 
