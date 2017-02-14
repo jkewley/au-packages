@@ -4,7 +4,6 @@
     <id>camunda-modeler</id>
     <title>Camunda Modeler</title>
     <version>1.6.0</version>
-    <authors>https://github.com/camunda/camunda-modeler/graphs/contributors</authors>
     <owners>hambone TervisIT</owners>
     <summary>BPMN process diagrams and DMN decision tables</summary>
     <description>Camunda Modeler is a desktop application for editing BPMN process diagrams and DMN decision tables. It is very easy to use, which means that business analysts can use it as well as developers, working on the same diagrams.
