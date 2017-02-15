@@ -20,7 +20,7 @@
     <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages</packageSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/logstash/current/index.html</docsUrl>
     <dependencies>
-      <dependency id="javaruntime" />
+      <dependency id="server-jre" version="8.0.0" />
     </dependencies>
   </metadata>
   <files>
