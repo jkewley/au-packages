@@ -35,11 +35,11 @@ This is an automatic package.
     <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/kafka</packageSourceUrl>
     <projectSourceUrl>https://github.com/apache/kafka</projectSourceUrl>
     <docsUrl>https://kafka.apache.org/documentation/</docsUrl>
-    <tags>data kafka streaming</tags>
+    <tags>data kafka streaming admin</tags>
     <licenseUrl>https://github.com/apache/kafka/blob/trunk/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-	  <dependency id="nssm" />
+	  <dependency id="nssm" version="2.24.0.20161223" />
       <dependency id="server-jre" version="8.0.0" />
     </dependencies>
   </metadata>
