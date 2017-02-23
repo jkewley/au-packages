@@ -17,6 +17,8 @@ $packageArgs = @{
   unzipLocation  = Split-Path $MyInvocation.MyCommand.Definition
 }
 Install-ChocolateyZipPackage @packageArgs
+$File = Get-ChildItem -File -Path $env:ChocolateyInstall\lib\$packageName\tools\ -Filter *.tar
+Get-ChocolateyUnzip -fileFullPath $File.FullName -destination $env:ChocolateyInstall\lib\$packageName\tools\
 
 $ServiceName = 'prometheus-service'
 
