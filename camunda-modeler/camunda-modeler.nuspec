@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>camunda-modeler</id>
     <title>Camunda Modeler</title>
-    <version>1.6.0</version>
+    <version>1.7.1</version>
     <owners>hambone TervisIT</owners>
     <authors>Camunda</authors>
     <summary>BPMN process diagrams and DMN decision tables</summary>
