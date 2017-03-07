@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri "https://prometheus.io/download/"
 
     #prometheus-1.5.2.windows-386.tar.gz
-    $regex  = "prometheus-1.5.2.windows-.+.tar.gz"
+    $regex  = "prometheus-+.+.+.windows-.+.tar.gz"
     $urls = $download_page.links | ? href -match $regex | select -expand href
 
     $version = ($urls -split "-" | select -First 1 -Skip 1) -split "\.windows" | select -First 1
