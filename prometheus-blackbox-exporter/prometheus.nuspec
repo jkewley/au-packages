@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>prometheus-blackbox-exporter</id>
+    <title>Blackbox prober for Prometheus</title>
+    <version>0.0.0</version>
+    <owners>hambone TervisIT</owners>
+    <authors>Prometheus</authors>
+    <summary>From metrics to insight</summary>
+    <description>The blackbox exporter allows blackbox probing of network endpoints over HTTP, HTTPS, DNS, TCP and ICMP. Additional modules can be defined to suit other needs.
+
+Querying of endpoints happens via HTTP GET queries, by specifying the target name and what kind of probing to execute. Results from the probe are returned as a set of Prometheus metrics.
+    </description>
+    <iconUrl>https://pbs.twimg.com/profile_images/588945677599780865/mrhc1gSh.png</iconUrl>
+    <projectUrl>https://prometheus.io/</projectUrl>
+    <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/prometheus-blackbox-exporter</packageSourceUrl>
+    <projectSourceUrl>https://github.com/prometheus/blackbox_exporter</projectSourceUrl>
+    <docsUrl>https://github.com/prometheus/blackbox_exporter</docsUrl>
+    <tags>data prometheus metric monitoring admin</tags>
+    <licenseUrl>https://github.com/prometheus/blackbox_exporter/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+	  <dependency id="nssm" version="2.24.0.20161223" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
