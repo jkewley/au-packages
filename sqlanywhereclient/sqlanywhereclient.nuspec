@@ -3,7 +3,7 @@
   <metadata>
     <id>sqlanywhereclient</id>
     <title>SAP SQL Anywhere Client</title>
-    <version>0.0</version>
+    <version>12.0.1</version>
     <owners>TervisIT</owners>
     <authors>SQL Anywhere</authors>
     <summary>Client libraries and tools like Sybase central for SQL Anywhere</summary>

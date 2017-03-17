@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'sqlanywhereclient'
-$url32       = 'https://github.com/prometheus/prometheus/releases/download/v1.5.2/prometheus-1.5.2.windows-386.tar.gz'
-$url64       = 'https://github.com/prometheus/prometheus/releases/download/v1.5.2/prometheus-1.5.2.windows-amd64.tar.gz'
-$checksum32  = 'cbf4028b62eb0bb36459ec87cf8d793ec417a874124b8c67f8b75911043f3787'
-$checksum64  = '8518df8ad210a3d988c5de82b419375021f3fcc76ccb23bd1c130c870af81af2'
+$url32       = 'http://d5d4ifzqzkhwt.cloudfront.net/sqla12client/SQLA1201_Client.exe'
+$url64       = 'http://d5d4ifzqzkhwt.cloudfront.net/sqla12client/SQLA1201_Client.exe'
+$checksum32  = 'b4288b1acb939b30beaa61323666a280a31e8f32d7147a556804425e8106daed'
+$checksum64  = 'b4288b1acb939b30beaa61323666a280a31e8f32d7147a556804425e8106daed'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
