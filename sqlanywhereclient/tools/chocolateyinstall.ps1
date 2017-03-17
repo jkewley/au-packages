@@ -10,19 +10,24 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $downloadArgs = @{
     packageName = $packageName
-    fileFullPath = "$toolsDir\SA12.exe"
+    fileFullPath = "$env:temp\SA12.exe"
     url = $url32
     checksum = $checksum32
     checksumType = "SHA256"
 }
 
+$unzipArgs = @{
+    fileFullPath = "$env:temp\SA12.exe"
+    destination = "$env:temp\SA12\"
+}
+
 $packageArgs = @{
     packageName = $packageName
-    file = "$toolsDir\SA12\setup.exe"
+    file = "$env:temp\SA12\setup.exe"
     fileType = 'EXE'
     silentArgs = '/S "/v /qn SA32=1 SA64=1"'
 }
 
 Get-ChocolateyWebFile @downloadArgs
-Get-ChocolateyUnzip -FileFullPath "$toolsDir\SA12.exe" -Destination "$toolsDir\SA12\"
+Get-ChocolateyUnzip @unzipArgs
 Install-ChocolateyInstallPackage @packageArgs
