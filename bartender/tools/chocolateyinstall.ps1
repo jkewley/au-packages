@@ -8,16 +8,20 @@ $checksum64  = '8518df8ad210a3d988c5de82b419375021f3fcc76ccb23bd1c130c870af81af2
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$PackageParameters = Get-PackageParameters
+try {
+    $PackageParameters = Get-PackageParameters
 
-if ($PackageParameters["Edition"]) { 
-    $Edition = "EDITION=$($PackageParameters["Edition"])"
-}
-if ($PackageParameters["Remove"]) { 
-    $Remove = "REMOVE=$($PackageParameters["Remove"])"
-}
-if ($PackageParameters["PKC"]) { 
-    $PKC = "PKC=$($PackageParameters["PKC"])"
+    if ($PackageParameters["Edition"]) { 
+        $Edition = "EDITION=$($PackageParameters["Edition"])"
+    }
+    if ($PackageParameters["Remove"]) { 
+        $Remove = "REMOVE=$($PackageParameters["Remove"])"
+    }
+    if ($PackageParameters["PKC"]) { 
+        $PKC = "PKC=$($PackageParameters["PKC"])"
+    }
+} catch {
+    Write-Warning "Error parsing package parameters. Continuing with default (trial) install of Bartender."
 }
 
 $silentArgs = "/S /v`"/qn $Edition $Remove $PKC`""
