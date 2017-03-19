@@ -10,9 +10,6 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 #$PackageParameters = Get-PackageParameters # Doesn't seem to be compatible with AU
 
-$arguments = @{}
-$packageParameters = $env:chocolateyPackageParameters
-
 if ($packageParameters) {
     $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"
     $option_name = 'option'
