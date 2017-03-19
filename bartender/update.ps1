@@ -13,13 +13,13 @@ function global:au_SearchReplace {
 
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri "https://www.seagullscientific.com/support/service-releases-legacy-versions/v100/" -UseBasicParsing
+    $download_page = Invoke-WebRequest -Uri "https://wiki.scn.sap.com/wiki/display/SQLANY/SAP+SQL+Anywhere+Database+Client+Download" -UseBasicParsing
 
     #SQLA1201_Client.exe
-    $regex  = "BT100_2868_Suite.exe"
+    $regex  = "SQLA1201_Client.exe"
     $url = $download_page.links | ? href -match $regex | select -expand href
 
-    $version = "10.0.2868"
+    $version = "12.0.1"
     $url32 = $url
     $url64 = $url
 
