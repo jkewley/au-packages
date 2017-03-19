@@ -1,41 +1,22 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'Bartender'
-$url32       = ''
-$url64       = ''
-$checksum32  = ''
-$checksum64  = ''
+$url32       = 'https://github.com/prometheus/prometheus/releases/download/v1.5.2/prometheus-1.5.2.windows-386.tar.gz'
+$url64       = 'https://github.com/prometheus/prometheus/releases/download/v1.5.2/prometheus-1.5.2.windows-amd64.tar.gz'
+$checksum32  = 'cbf4028b62eb0bb36459ec87cf8d793ec417a874124b8c67f8b75911043f3787'
+$checksum64  = '8518df8ad210a3d988c5de82b419375021f3fcc76ccb23bd1c130c870af81af2'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-#$PackageParameters = Get-PackageParameters # Doesn't seem to be compatible with AU
+$PackageParameters = Get-PackageParameters
 
-if ($packageParameters) {
-    $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"
-    $option_name = 'option'
-    $value_name = 'value'
-
-    if ($packageParameters -match $match_pattern ){
-        $results = $packageParameters | Select-String $match_pattern -AllMatches
-        $results.matches | % {
-        $arguments.Add(
-            $_.Groups[$option_name].Value.Trim(),
-            $_.Groups[$value_name].Value.Trim())
-    }
-    }
-    else
-    {
-        Throw "Package Parameters were found but were invalid (REGEX Failure)"
-    }
-}
-
-if ($arguments.ContainsKey("Edition")) { 
+if ($PackageParameters["Edition"]) { 
     $Edition = "EDITION=$($PackageParameters["Edition"])"
 }
-if ($arguments.ContainsKey("Remove")) { 
+if ($PackageParameters["Remove"]) { 
     $Remove = "REMOVE=$($PackageParameters["Remove"])"
 }
-if ($arguments.ContainsKey("PKC")) { 
+if ($PackageParameters["PKC"]) { 
     $PKC = "PKC=$($PackageParameters["PKC"])"
 }
 
