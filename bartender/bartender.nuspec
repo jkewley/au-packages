@@ -8,7 +8,7 @@
     <authors>Seagull Scientific</authors>
     <summary>Seagull Scientific Bartender Suite</summary>
     <description>
-BarTender® software enables organizations around the world to improve safety, security, efficiency and compliance by creating and automating the printing and control of labels, barcodes, RFID tags, plastic cards and more.
+BarTender software enables organizations around the world to improve safety, security, efficiency and compliance by creating and automating the printing and control of labels, barcodes, RFID tags, plastic cards and more.
 
 #### Package Parameters
 The following package parameters can be set:
@@ -32,6 +32,10 @@ The following package parameters can be set:
 
 These parameters can be passed to the installer with the use of `--params`.
 For example: `--params "/Edition:EA /Remove:Librarian,LicenseServer /PKC:XXXX-XXXX-XXXX-XXXX"`.
+
+Specifying no parameters will install a trial version of Bartender
+
+Note: Version 10.0.2868 is equivalent to Bartender 10.0 SR4
     </description>
     <iconUrl>https://www.seagullscientific.com/media/101718/bartender-header.png</iconUrl>
     <projectUrl>https://www.seagullscientific.com/support/service-releases-legacy-versions/v100/</projectUrl>
@@ -41,7 +45,6 @@ For example: `--params "/Edition:EA /Remove:Librarian,LicenseServer /PKC:XXXX-XX
     <licenseUrl>https://www.seagullscientific.com/label-software/barcode-label-design-and-printing/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-        <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
   </metadata>
   <files>
