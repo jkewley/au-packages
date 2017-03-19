@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>bartender</id>
+    <title>Bartender Suite</title>
+    <version>0.0</version>
+    <owners>TervisIT</owners>
+    <authors>Seagull Scientific</authors>
+    <summary>Seagull Scientific Bartender Suite</summary>
+    <description>
+BarTender® software enables organizations around the world to improve safety, security, efficiency and compliance by creating and automating the printing and control of labels, barcodes, RFID tags, plastic cards and more.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/Edition` - Can be set to "EA" (Enterprise Automation), "A" (Automation), "P" (Professional), "B" (Basic).
+ * `/Remove` - Removes features. Separated by commas, no spaces. Features are:
+    * Bartender
+    * Samples
+    * AdministrationConsole
+    * BatchMaker
+    * HistoryExplorer
+    * IntegrationBuilder
+    * Librarian
+    * LicenseServer
+    * PrintPortal
+    * PrintStation
+    * PrinterMaestro
+    * ReprintConsole
+    * SDK
+ * `/PKC` - Product Key Code. Enter code as provided with hyphens.
+
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params "/Edition:EA /Remove:Librarian,LicenseServer /PKC:XXXX-XXXX-XXXX-XXXX"`.
+    </description>
+    <iconUrl>https://www.seagullscientific.com/media/101718/bartender-header.png</iconUrl>
+    <projectUrl>https://www.seagullscientific.com/support/service-releases-legacy-versions/v100/</projectUrl>
+    <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/bartender</packageSourceUrl>
+    <docsUrl>https://www.seagullscientific.com/support/technical-support/#online</docsUrl>
+    <tags>bartender seagull scientific labels admin</tags>
+    <licenseUrl>https://www.seagullscientific.com/label-software/barcode-label-design-and-printing/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+        <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
