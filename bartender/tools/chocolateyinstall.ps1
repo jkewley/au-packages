@@ -8,23 +8,7 @@ $checksum64  = 'af95ffe21c75569805e865aec3d419399a0540dfaf9bacbb507d205782ba9a72
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-try {
-    $PackageParameters = Get-PackageParameters
-
-    if ($PackageParameters["Edition"]) { 
-        $Edition = "EDITION=$($PackageParameters["Edition"])"
-    }
-    if ($PackageParameters["Remove"]) { 
-        $Remove = "REMOVE=$($PackageParameters["Remove"])"
-    }
-    if ($PackageParameters["PKC"]) { 
-        $PKC = "PKC=$($PackageParameters["PKC"])"
-    }
-} catch {
-    Write-Warning "Error parsing package parameters. Continuing with default (trial) install of Bartender."
-}
-
-$silentArgs = "/S /v`"/qn $Edition $Remove $PKC`""
+$silentArgs = "/S /v`"/qn$(if ($env:chocolateyPackageParameters) {" $env:chocolateyPackageParameters"})`""
 
 Write-Debug "This would be the Chocolatey Silent Arguments: $silentArgs"
 

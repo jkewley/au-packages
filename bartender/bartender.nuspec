@@ -11,27 +11,15 @@
 BarTender software enables organizations around the world to improve safety, security, efficiency and compliance by creating and automating the printing and control of labels, barcodes, RFID tags, plastic cards and more.
 
 #### Package Parameters
-The following package parameters can be set:
+Please refer to [this pdf](https://www.seagullscientific.com/media/101580/bartender-silent-install-201511.pdf) for information on the various package parameters that can be passed.
 
- * `/Edition` - Can be set to "EA" (Enterprise Automation), "A" (Automation), "P" (Professional), "B" (Basic).
- * `/Remove` - Removes features. Separated by commas, no spaces. Features are:
-    * Bartender
-    * Samples
-    * AdministrationConsole
-    * BatchMaker
-    * HistoryExplorer
-    * IntegrationBuilder
-    * Librarian
-    * LicenseServer
-    * PrintPortal
-    * PrintStation
-    * PrinterMaestro
-    * ReprintConsole
-    * SDK
- * `/PKC` - Product Key Code. Enter code as provided with hyphens.
+This PDF is for a newer version of Bartender then the one currently installed with this package so some parameters might not work.
+
+/s /v"/qn" is always assumed and anything you added will be included after the qn before the ".
+For example: /s /v"/qn WhateverYouAddGoesHere".
 
 These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "/Edition:EA /Remove:Librarian,LicenseServer /PKC:XXXX-XXXX-XXXX-XXXX"`.
+For example: `--params "ADDLOCAL=BarTender,PrintStation PKC=XXXX-XXXX-XXXX-XXXX"`.
 
 Specifying no parameters will install a trial version of Bartender
 
@@ -45,7 +33,6 @@ Note: Version 10.0.2868 is equivalent to Bartender 10.0 SR4
     <licenseUrl>https://www.seagullscientific.com/label-software/barcode-label-design-and-printing/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-        <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
   </metadata>
   <files>
