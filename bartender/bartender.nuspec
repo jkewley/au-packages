@@ -19,7 +19,7 @@ This PDF is for a newer version of Bartender then the one currently installed wi
 For example: /s /v"/qn WhateverYouAddGoesHere".
 
 These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "ADDLOCAL=BarTender,PrintStation PKC=XXXX-XXXX-XXXX-XXXX"`.
+For example: `--params "EDITION=B REMOVE=PrintStation PKC=XXXX-XXXX-XXXX-XXXX"`.
 
 Specifying no parameters will install a trial version of Bartender
 
@@ -32,8 +32,6 @@ Note: Version 10.0.2868 is equivalent to Bartender 10.0 SR4
     <tags>bartender seagull scientific labels admin</tags>
     <licenseUrl>https://www.seagullscientific.com/label-software/barcode-label-design-and-printing/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <dependencies>
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

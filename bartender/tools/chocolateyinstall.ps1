@@ -8,7 +8,7 @@ $checksum64  = 'af95ffe21c75569805e865aec3d419399a0540dfaf9bacbb507d205782ba9a72
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$silentArgs = "/S /v`"/qn$(if ($env:chocolateyPackageParameters) {" $env:chocolateyPackageParameters"})`""
+$silentArgs = "/S /v`"/qn $(if ($env:chocolateyPackageParameters) {"$env:chocolateyPackageParameters"}else{"EDITION=B"})`""
 
 Write-Debug "This would be the Chocolatey Silent Arguments: $silentArgs"
 
