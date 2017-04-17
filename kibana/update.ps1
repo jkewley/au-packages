@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     
-    $download_page = Invoke-WebRequest -Uri "https://www.elastic.co/downloads/kibana"
+    $download_page = Invoke-WebRequest -Uri "https://www.elastic.co/downloads/kibana" -UseBasicParsing
 
     #kibana-5.1.1-windows-x86.zip
     $regex  = "kibana-.+-windows-x86.zip"

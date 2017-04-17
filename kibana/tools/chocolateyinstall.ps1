@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'kibana'
-$url32       = 'https://artifacts.elastic.co/downloads/kibana/kibana-5.2.1-windows-x86.zip'
-$checksum32  = '8753db954a89a7a5c19a2c93886b523d1f8054bd31ce24c772bd873555a949d8'
+$url32       = 'https://artifacts.elastic.co/downloads/kibana/kibana-5.3.0-windows-x86.zip'
+$checksum32  = '56c5fbd5767dea313ab11489cfed6da063677f9ad38fe9c0420535a46bfdbdaf'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -24,5 +24,5 @@ if ($Service = Get-Service $ServiceName -ErrorAction SilentlyContinue) {
     Start-ChocolateyProcessAsAdmin "delete $ServiceName" "sc.exe"
 }
 
-Start-ChocolateyProcessAsAdmin "install $ServiceName $(Join-Path $env:chocolateyPackageFolder "kibana-$PackageVersion-windows\bin\kibana.bat")" nssm
+Start-ChocolateyProcessAsAdmin "install $ServiceName $(Join-Path $env:chocolateyPackageFolder "tools\kibana-$PackageVersion-windows-x86\bin\kibana.bat")" nssm
 Start-ChocolateyProcessAsAdmin "set $ServiceName Start SERVICE_DEMAND_START" nssm

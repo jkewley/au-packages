@@ -24,7 +24,6 @@
     <licenseUrl>https://github.com/elastic/kibana/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-	  <dependency id="jdk8" />
 	  <dependency id="nssm" />
     </dependencies>
   </metadata>
