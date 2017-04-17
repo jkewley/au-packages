@@ -20,7 +20,7 @@
     <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/kibana</packageSourceUrl>
     <projectSourceUrl>https://github.com/elastic/kibana</projectSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/kibana/current/index.html</docsUrl>
-    <tags>data kibana visualization elastic</tags>
+    <tags>data kibana visualization elastic admin</tags>
     <licenseUrl>https://github.com/elastic/kibana/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
