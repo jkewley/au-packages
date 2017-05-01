@@ -24,7 +24,7 @@
     <licenseUrl>https://github.com/elastic/kibana/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-	  <dependency id="nssm" />
+	  <dependency id="nssm" version="2.24.0" />
     </dependencies>
   </metadata>
   <files>
