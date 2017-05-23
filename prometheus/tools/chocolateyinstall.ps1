@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'prometheus'
-$url32       = 'https://github.com/prometheus/prometheus/releases/download/v1.6.2/prometheus-1.6.2.windows-386.tar.gz'
-$url64       = 'https://github.com/prometheus/prometheus/releases/download/v1.6.2/prometheus-1.6.2.windows-amd64.tar.gz'
-$checksum32  = '2693867b59512eee39475102f650af3bcb538ae75ade0d8c03da913bd147f766'
-$checksum64  = '8a125bd83aa816404c0be21fd1711c088d455f78fbc55e1a39c34d82e50f9a8b'
+$url32       = 'https://github.com/prometheus/prometheus/releases/download/v1.6.3/prometheus-1.6.3.windows-386.tar.gz'
+$url64       = 'https://github.com/prometheus/prometheus/releases/download/v1.6.3/prometheus-1.6.3.windows-amd64.tar.gz'
+$checksum32  = 'd992970a5a40f47372f6d7452fee82c97af56d08063e6f62e74d32297157ec4b'
+$checksum64  = '61e6042aa56fb5ee3a0e5cd0bf878b7e5e6eb10bb24e4ad7520fa187078ed00b'
 
 $packageArgs = @{
   packageName    = $packageName
