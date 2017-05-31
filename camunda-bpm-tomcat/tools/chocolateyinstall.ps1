@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'camunda-bpm-tomcat'
-$url32       = 'https://camunda.org/release/camunda-bpm/tomcat/7.6/camunda-bpm-tomcat-7.6.0.zip'
-$url64       = 'https://camunda.org/release/camunda-bpm/tomcat/7.6/camunda-bpm-tomcat-7.6.0.zip'
-$checksum32  = '4f08e0c14d29e3bd9dd6dbe1d4f0c369ad2065ad80973f61a774a816476f110b'
-$checksum64  = '4f08e0c14d29e3bd9dd6dbe1d4f0c369ad2065ad80973f61a774a816476f110b'
+$url32       = 'https://camunda.org/release/camunda-bpm/tomcat/7.7/camunda-bpm-tomcat-7.7.0.zip'
+$url64       = 'https://camunda.org/release/camunda-bpm/tomcat/7.7/camunda-bpm-tomcat-7.7.0.zip'
+$checksum32  = 'd0e39200c05ffc93e070c4973cc9f6eccae02c75da709163d443acc97c18b93b'
+$checksum64  = 'd0e39200c05ffc93e070c4973cc9f6eccae02c75da709163d443acc97c18b93b'
 
 $packageArgs = @{
   packageName    = $packageName
