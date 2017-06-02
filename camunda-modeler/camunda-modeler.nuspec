@@ -3,7 +3,7 @@
   <metadata>
     <id>camunda-modeler</id>
     <title>Camunda Modeler</title>
-    <version>1.8.0</version>
+    <version>1.8.1</version>
     <owners>hambone TervisIT</owners>
     <authors>Camunda</authors>
     <summary>BPMN process diagrams and DMN decision tables</summary>
