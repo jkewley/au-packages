@@ -31,6 +31,6 @@ if ($Service = Get-Service $ServiceName -ErrorAction SilentlyContinue) {
     Start-ChocolateyProcessAsAdmin "delete $ServiceName" "sc.exe"
 }
 
-$ExporterExe = Get-ChildItem -File -Path $(Join-Path $File.DirectoryName $File.BaseName) -Filter *.exe
+$ExporterExe = Get-ChildItem -File -Path $(Join-Path $File.DirectoryName $File.basename) -Filter *.exe
 Start-ChocolateyProcessAsAdmin "install $ServiceName $($ExporterExe.FullName)" nssm
 Start-ChocolateyProcessAsAdmin "set $ServiceName Start SERVICE_DEMAND_START" nssm
