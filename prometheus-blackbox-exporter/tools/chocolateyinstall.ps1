@@ -31,5 +31,6 @@ if ($Service = Get-Service $ServiceName -ErrorAction SilentlyContinue) {
     Start-ChocolateyProcessAsAdmin "delete $ServiceName" "sc.exe"
 }
 
-Start-ChocolateyProcessAsAdmin "install $ServiceName $(Join-Path $env:chocolateyPackageFolder "tools\prometheus-$PackageVersion.windows-amd64\prometheus.exe")" nssm
+$ExporterExe = Get-ChildItem -File -Path $(Join-Path $File.DirectoryName $File.basename) -Filter *.exe
+Start-ChocolateyProcessAsAdmin "install $ServiceName $($ExporterExe.FullName)" nssm
 Start-ChocolateyProcessAsAdmin "set $ServiceName Start SERVICE_DEMAND_START" nssm
