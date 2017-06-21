@@ -15,11 +15,10 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri "https://www.seagullscientific.com/support/service-releases-legacy-versions/v100/" -UseBasicParsing
 
-    #SQLA1201_Client.exe
     $regex  = "BT100_2868_Suite.exe"
     $url = $download_page.links | ? href -match $regex | select -expand href
 
-    $version = "10.0.2868"
+    $version = "10.0.2868.1"
     $url32 = $url
     $url64 = $url
 
