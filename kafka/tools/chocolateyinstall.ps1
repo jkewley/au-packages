@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'kafka'
-$url32       = 'http://mirror.symnds.com/software/Apache/kafka/0.10.2.0/kafka_2.11-0.10.2.0.tgz'
-$checksum32  = '4c9e73059dea2dcb5022135f8e7eff5f187ffcc27a27b365b326ee61040214cd'
+$url32       = 'http://apache.ip-guide.com/kafka/0.11.0.0/kafka_2.11-0.11.0.0.tgz'
+$checksum32  = '63209e820598ec11c0a6634ea16d92bdd2c27013525ee260627349c0cbf4bd5c'
 
 $packageArgs = @{
   packageName    = $packageName
