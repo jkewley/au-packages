@@ -3,7 +3,7 @@
   <metadata>
     <id>bartender</id>
     <title>Bartender Suite</title>
-    <version>10.0.2868.1</version>
+    <version>11.0.4.3127</version>
     <owners>TervisIT</owners>
     <authors>Seagull Scientific</authors>
     <summary>Seagull Scientific Bartender Suite</summary>
@@ -13,9 +13,7 @@ BarTender software enables organizations around the world to improve safety, sec
 #### Package Parameters
 Please refer to [this pdf](https://www.seagullscientific.com/media/101580/bartender-silent-install-201511.pdf) for information on the various package parameters that can be passed.
 
-This PDF is for a newer version of Bartender then the one currently installed with this package so some parameters might not work.
-
-/s /v"/qn" is always assumed and anything you added will be included after the qn before the ".
+/s /v"/qn" is always assumed and anything you add will be included after the qn before the ".
 For example: /s /v"/qn WhateverYouAddGoesHere".
 
 These parameters can be passed to the installer with the use of `--params`.
@@ -23,10 +21,10 @@ For example: `--params "EDITION=B REMOVE=PrintStation PKC=XXXX-XXXX-XXXX-XXXX"`.
 
 Specifying no parameters will install a trial version of Bartender
 
-Note: Version 10.0.2868 is equivalent to Bartender 10.0 SR4
+Note: Version 11.0.4.3127 is equivalent to Bartender 2016 R4
     </description>
     <iconUrl>https://www.seagullscientific.com/media/101718/bartender-header.png</iconUrl>
-    <projectUrl>https://www.seagullscientific.com/support/service-releases-legacy-versions/v100/</projectUrl>
+    <projectUrl>https://www.seagullscientific.com/label-software/barcode-label-design-and-printing/</projectUrl>
     <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/bartender</packageSourceUrl>
     <docsUrl>https://www.seagullscientific.com/support/technical-support/#online</docsUrl>
     <tags>bartender seagull scientific labels admin</tags>

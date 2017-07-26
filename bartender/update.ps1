@@ -13,14 +13,9 @@ function global:au_SearchReplace {
 
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri "https://www.seagullscientific.com/support/service-releases-legacy-versions/v100/" -UseBasicParsing
-
-    $regex  = "BT100_2868_Suite.exe"
-    $url = $download_page.links | ? href -match $regex | select -expand href
-
-    $version = "10.0.2868.1"
-    $url32 = $url
-    $url64 = $url
+    $version = "11.0.4.3127"
+    $url32 = "http://downloads.seagullscientific.com/BarTender/11.0/BT2016_R4_3127_Full.exe"
+    $url64 = "http://downloads.seagullscientific.com/BarTender/11.0/BT2016_R4_3127_Full_x64.exe"
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
