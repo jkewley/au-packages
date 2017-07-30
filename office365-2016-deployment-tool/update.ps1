@@ -39,7 +39,21 @@ function global:au_GetLatest {
     $VersionSegments = $Version.Split(".")
 
     #Download URL format: https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_7614-3602.exe
-    $url = "https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_$($VersionSegments[2])-$($VersionSegments[3]).exe"
+    $URLRoot = "https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_"
+    $URLWithDashVersionSeperator = "$URLRoot$($VersionSegments[2])-$($VersionSegments[3]).exe"
+    $URLWithDashVersionSeperatorResult = try{Invoke-WebRequest -Uri $URLWithDashVersionSeperator -Method Head}catch{}
+
+    $URLWithDotVersionSeperator = "$URLRoot$($VersionSegments[2]).$($VersionSegments[3]).exe"
+    $URLWithDotVersionSeperatorResult = try{Invoke-WebRequest -Uri $URLWithDotVersionSeperator -Method Head}catch{}
+
+    $Url = if ($URLWithDashVersionSeperatorResult) {
+        $URLWithDashVersionSeperator
+    } elseif ($URLWithDotVersionSeperatorResult) {
+        $URLWithDotVersionSeperator
+    } else {
+        throw "Neither recognized URL format with dot or with dash succeeded"
+    }
+
     $url32 = $url    
 
     $Latest = @{ URL32 = $url32; Version = $version }
