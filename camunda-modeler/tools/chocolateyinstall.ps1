@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'camunda-modeler'
-$url32       = 'https://camunda.org/release/camunda-modeler/1.9.0/camunda-modeler-1.9.0-win32-ia32.zip'
-$url64       = 'https://camunda.org/release/camunda-modeler/1.9.0/camunda-modeler-1.9.0-win32-x64.zip'
-$checksum32  = '7558fdec1962aa84189cebb26c31cb7fd01909e9cac114b6ad091b5dd0093714'
-$checksum64  = 'e0be3c6747c7e7b888c254df3fa63c0707543b9de44b45eab4768ca88e347db8'
+$url32       = 'https://camunda.org/release/camunda-modeler/1.10.0/camunda-modeler-1.10.0-win32-ia32.zip'
+$url64       = 'https://camunda.org/release/camunda-modeler/1.10.0/camunda-modeler-1.10.0-win32-x64.zip'
+$checksum32  = 'ef8211fa2bfa8b9fc88dc9d77ff5fd5a24c019358801a562db954a67d604874d'
+$checksum64  = '34a189de4613a1153d73fec8c0a0f6f4253720778fff28327afab8dbb2d177af'
 
 $packageArgs = @{
   packageName    = $packageName
