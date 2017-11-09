@@ -3,7 +3,7 @@
   <metadata>
     <id>kafka</id>
     <title>Kafka</title>
-    <version>0.11.0.0</version>
+    <version>1.0.0</version>
     <owners>hambone TervisIT</owners>
     <authors>Kafka</authors>
     <summary>Kafka is a distributed streaming platform</summary>
