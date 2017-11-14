@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>google-cloud-print-connector</id>
+    <title>Google Cloud Print Connector</title>
+    <version>0.0</version>
+    <owners>TervisIT</owners>
+    <authors>Google</authors>
+    <summary>Enable windows print servers to expose printers via Google Cloud print</summary>
+    <description>
+    Share printers from your Windows computer with ChromeOS and Android devices, using the Cloud Print Connector. The Connector is a purpose-built system process. It can share hundreds of printers on a powerful server.
+    </description>
+    <projectUrl>https://github.com/google/cloud-print-connector</projectUrl>
+    <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/google-cloud-print-connector</packageSourceUrl>
+    <projectSourceUrl>https://github.com/google/cloud-print-connector</projectSourceUrl>
+    <docsUrl>https://github.com/google/cloud-print-connector/wiki/</docsUrl>
+    <tags>google print</tags>
+    <licenseUrl>https://github.com/google/cloud-print-connector/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+    </dependencies>
+    <iconUrl></iconUrl>
+    <releaseNotes>https://github.com/google/cloud-print-connector/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
