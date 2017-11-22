@@ -3,7 +3,7 @@
   <metadata>
     <id>google-cloud-print-connector</id>
     <title>Google Cloud Print Connector</title>
-    <version>0.0</version>
+    <version>1.13</version>
     <owners>TervisIT</owners>
     <authors>Google</authors>
     <summary>Enable windows print servers to expose printers via Google Cloud print</summary>
@@ -19,7 +19,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
     </dependencies>
-    <iconUrl></iconUrl>
+    <iconUrl>https://lh4.ggpht.com/IOAolyiGssaiu7zU7RDqoamzRzsugMaCGCDj8RteqmU3MCvp1Bel_rZVCWc0uxY3lRsP=w300</iconUrl>
     <releaseNotes>https://github.com/google/cloud-print-connector/releases</releaseNotes>
   </metadata>
   <files>
