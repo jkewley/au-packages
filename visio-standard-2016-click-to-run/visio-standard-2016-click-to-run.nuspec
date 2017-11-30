@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>visio-standard-2016-click-to-run</id>
+		<version>16.0.8529.3600</version>
+		<packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/visio-standard-2016-click-to-run</packageSourceUrl>
+		<owners>hambone</owners>
+		<title>Visio Standard 2016 Click to Run</title>
+		<authors>TervisIT</authors>
+		<projectUrl>http://office.com</projectUrl>
+		<iconUrl>https://en.wikipedia.org/wiki/Microsoft_Visio#/media/File:Microsoft_Visio_icon.png</iconUrl>
+		<copyright>2016 Microsoft</copyright>
+		<licenseUrl>https://www.microsoft.com/en-us/servicesagreement/</licenseUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<docsUrl>https://support.office.com/</docsUrl>
+		<tags>Office Visio admin</tags>
+		<summary>Visio Standard 2016 Click to Run deployed via the Office deployment tool</summary>
+		<description>
+This package installs the volume license activated click to run version of Visio Standard 2016 via the office deployment tool
+		</description>
+		<dependencies>
+			<dependency id="chocolatey-uninstall.extension" />
+		</dependencies>
+		<releaseNotes>https://support.office.com/</releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
