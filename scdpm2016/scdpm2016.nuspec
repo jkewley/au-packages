@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>scdpm2016</id>
+    <title>scdpm2016</title>
+    <version>2.0.0</version>
+    <owners>DMohlmaster TervisIT</owners>
+    <authors>scdpm2016</authors>
+    <summary>Microsoft System Center DPM 2016</summary>
+    <description>Microsoft SCDPM2016</description>
+    <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/scdpm2016</packageSourceUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+	  <dependency id="nssm" version="2.24.0.20161223" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
