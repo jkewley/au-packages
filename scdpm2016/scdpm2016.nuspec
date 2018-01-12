@@ -10,9 +10,6 @@
     <description>Microsoft SCDPM2016</description>
     <packageSourceUrl>https://github.com/Tervis-Tumbler/au-packages/tree/master/scdpm2016</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <dependencies>
-	  <dependency id="nssm" version="2.24.0.20161223" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

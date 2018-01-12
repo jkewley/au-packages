@@ -4,13 +4,12 @@ $packageName = 'SCDPM2016'
 $packageVersion = "$Version"
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$ConfigFileLocation = $(Join-Path $toolsDir 'SCDPM2016Configuration.txt')
 
 $setupPackageArgs = @{
   packageName = $packageName
-  fileType = 'EXE'
-  file = '\\tervis.prv\applications\Installers\Microsoft\SCDPM2016\Setup.exe'
-  silentArgs = "/i /f $PackageParameters"
+  fileType = "EXE"
+  file = "\\tervis.prv\applications\Installers\Microsoft\SCDPM2016\Setup.exe"
+  silentArgs = "$PackageParameters"
 }
 
 Install-ChocolateyInstallPackage @setupPackageArgs
