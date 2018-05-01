@@ -17,9 +17,8 @@ function global:au_GetLatest {
     $regex  = "windows-connector-.+.msi"
     $url = $DownloadPage.links | ? href -match $regex | select -First 1 -expand href
 
-    $VersionWithExtension = $url -split "-" | select -Last 1
-    $Version = $VersionWithExtension -split "\.msi" | select -First 1
-    $url32 = "https://github.com/$url"
+    $Version = $url -split "-" | select -Last 1 -Skip 1
+    $url32 = "https://github.com$url"
 
     $Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
