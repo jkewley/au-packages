@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'google-cloud-print-connector'
-$url32       = 'https://github.com//google/cloud-print-connector/releases/download/v1.13/windows-connector-1.13.msi'
-$checksum32  = '93672ee361db7e6f6baa6b5db6578169ff707b3ce856d476e5662a8629f83fd2'
+$url32       = 'https://github.com/google/cloud-print-connector/releases/download/v1.16/windows-connector-1.16-i686.msi'
+$checksum32  = '8a7dc02416ae290db8e11839480e158f8d89b07c882be18b6cc1f34872444f62'
 
 $packageArgs = @{
   packageName   = $PackageName

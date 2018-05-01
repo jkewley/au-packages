@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'prometheus-blackbox-exporter'
-$url32       = 'https://github.com/prometheus/blackbox_exporter/releases/download/v0.10.0/blackbox_exporter-0.10.0.windows-386.tar.gz'
-$url64       = 'https://github.com/prometheus/blackbox_exporter/releases/download/v0.10.0/blackbox_exporter-0.10.0.windows-amd64.tar.gz'
-$checksum32  = 'da5052f5c856859b056e2b4bbaa02c3462630ade7e9c559c74b70ca68d015000'
-$checksum64  = 'c0d24e5cd1b7e69e4fd0e2f70a6804d9aa661e55dc3832e3a3391c0a2e20881c'
+$url32       = 'https://github.com/prometheus/blackbox_exporter/releases/download/v0.12.0/blackbox_exporter-0.12.0.windows-386.tar.gz'
+$url64       = 'https://github.com/prometheus/blackbox_exporter/releases/download/v0.12.0/blackbox_exporter-0.12.0.windows-amd64.tar.gz'
+$checksum32  = 'c174773cf1173331dfc42e5352226c87b645739605b96097aba21c0e096e86a5'
+$checksum64  = 'e8194ffe7c011f803b17e476c6527f6ad382ca523f4e93298f3254f39ab51d24'
 
 $packageArgs = @{
   packageName    = $packageName

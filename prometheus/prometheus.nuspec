@@ -3,7 +3,7 @@
   <metadata>
     <id>prometheus</id>
     <title>Prometheus</title>
-    <version>2.0.0</version>
+    <version>2.2.1</version>
     <owners>hambone TervisIT</owners>
     <authors>Prometheus</authors>
     <summary>From metrics to insight</summary>

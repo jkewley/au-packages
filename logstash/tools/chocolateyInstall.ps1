@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $PackageName = 'logstash'
-$url32       = 'https://artifacts.elastic.co/downloads/logstash/logstash-5.2.1.zip'
-$checksum32  = '14093855a8a3a4f27a2b4e461ee70697fff527eece70d5d58f1015cf5103f77e'
+$url32       = 'https://artifacts.elastic.co/downloads/logstash/logstash-6.2.4.zip'
+$checksum32  = '2c15d40f23979566b79ad57b86c8a953099c2a36ad34e987d0295ad803ad3c1d'
 
 $packageArgs = @{
   packageName    = $packageName
